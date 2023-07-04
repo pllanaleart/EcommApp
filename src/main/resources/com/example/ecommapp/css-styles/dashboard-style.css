@@ -1,0 +1,5 @@
+.border-pane{
+    -fx-background-image: url("com/example/ecommapp/images/2454628.png");
+    -fx-background-size: cover;
+    -fx-border-color: blue;
+}

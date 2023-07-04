@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ecommapp.LoginController">
+   <left>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="147.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+         <children>
+            <PasswordField fx:id="passwotrdTxt" layoutX="81.0" layoutY="155.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="170.0" promptText="write password..." style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <Label fx:id="welcomeText1" layoutX="175.0" layoutY="262.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="119.0" text="New to this page?" />
+            <Label fx:id="welcomeText11" layoutX="292.0" layoutY="265.0" minHeight="-Infinity" minWidth="-Infinity" text="Register" textFill="#0015ff" underline="true" />
+         
+                                                                                                                                <Label fx:id="welcomeText" layoutX="81.0" layoutY="188.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="112.0" text="Forgot password?" underline="true" />
+           <Button fx:id="loginBtn" layoutX="81.0" layoutY="216.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#onHelloButtonClick" prefHeight="29.0" prefWidth="80.0" text="Login" />
+            <Button fx:id="loginBtn1" layoutX="173.0" layoutY="216.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#onHelloButtonClick" prefHeight="30.0" prefWidth="80.0" text="Exit" />
+            <TextField fx:id="usernameTxt" layoutX="81.0" layoutY="112.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="170.0" promptText="write username..." style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
