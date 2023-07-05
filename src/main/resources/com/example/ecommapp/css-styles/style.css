@@ -1,0 +1,35 @@
+.white-background{
+    -fx-background-color: #F0F0F0;
+}
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+.border-radius{
+    -fx-border-radius: 20;
+    -fx-border-color: #D7D7D7;
+
+}
+.text-field {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-border-radius: 0;
+}
+.text-field:focused {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-border-radius: 0;
+}
+.selected{
+    -fx-background-color: rgba(0,0,0,0);
+
+}
+.mouse-moved:hover{
+    -fx-background-color: #E7E7E7;
+
+}
+.button{
+    -fx-border-radius: 20;
+}
+.boxed:hover{
+    -fx-border-radius: 20;
+}

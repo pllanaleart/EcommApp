@@ -26,7 +26,6 @@ public class LoginController {
     private String jdbcUrl = "jdbc:mysql://localhost:3306/ecommerce";
     private String jdbcUsername = "leart";
     private String jdbcPassword = "continum";
-    private String name;
     private UserEntity userEntity;
 
     @FXML
@@ -71,7 +70,5 @@ public class LoginController {
         stage.setTitle("Dashboard");
         stage.setScene(new Scene(root1));
         stage.show();
-
-
     }
 }

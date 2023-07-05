@@ -43,6 +43,8 @@ public class DashboardController implements Initializable {
         this.userEntity = userEntity;
     }
 
+
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -51,20 +53,6 @@ public class DashboardController implements Initializable {
 
             // Load the first imag
 
-            // Create a Timeline for the slideshow
-            Timeline timeline = new Timeline(new KeyFrame(Duration.millis(SLIDESHOW_DELAY), event -> {
-                currentIndex = (currentIndex + 1) % IMAGE_URLS.length;
-                InputStream stream = null;
-                try {
-                    stream = new FileInputStream(IMAGE_URLS[currentIndex]);
-                } catch (FileNotFoundException e) {
-                    throw new RuntimeException(e);
-                }
-                loadImage(imageView, stream);
-            }));
-
-            timeline.setCycleCount(Timeline.INDEFINITE);
-            timeline.play();
         }
 
     private void loadImage(ImageView imageView, InputStream stream) {
