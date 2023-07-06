@@ -29,20 +29,20 @@ public class LoginController {
     private UserEntity userEntity;
 
     @FXML
-    protected void onHelloButtonClick(ActionEvent event) throws IOException {
-        Connection connection = null;
-        try{
-            connection = DriverManager.getConnection(jdbcUrl,jdbcUsername,jdbcPassword);
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-        String query = "SELECT * from user where email = ? AND password = ?";
-        try(PreparedStatement statement = connection.prepareStatement(query)) {
-            statement.setString(1,usernameTxt.getText());
-            statement.setString(2,passwotrdTxt.getText());
-            ResultSet resultSet = statement.executeQuery();
+            protected void onHelloButtonClick(ActionEvent event) throws IOException {
+                Connection connection = null;
+                try{
+                    connection = DriverManager.getConnection(jdbcUrl,jdbcUsername,jdbcPassword);
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+                String query = "SELECT * from user where email = ? AND password = ?";
+                try(PreparedStatement statement = connection.prepareStatement(query)) {
+                    statement.setString(1,usernameTxt.getText());
+                    statement.setString(2,passwotrdTxt.getText());
+                    ResultSet resultSet = statement.executeQuery();
 
-            if (resultSet.next()){
+                    if (resultSet.next()){
                 userEntity= new UserEntity(resultSet.getInt("iduser"),resultSet.getString("name"),resultSet.getString("role"));
                 switchToDashboard(event);
 
